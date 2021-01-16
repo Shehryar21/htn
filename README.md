@@ -3,6 +3,9 @@
 Project template / boilerplate for a micro-service providing endpoints via Flask (Python) and a frontend via React 
 (JavaScript).
 
+Requirements:
+Connection string: 'postgresql://subadmin:password@127.0.0.1:59100/virtualtours?sslmode=require'
+
 **Table of Contents**
 
 1. [Requirements](#requirements)
