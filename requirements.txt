@@ -3,6 +3,7 @@ flask
 setuptools
 python-dotenv
 pbu>=0.6.6
+psycopg2-binary
 
 # TODO: choose your database
 pymongo

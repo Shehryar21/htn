@@ -6,6 +6,7 @@ from storage.example_mongo_store import ExampleStore as ExampleMongoStore
 from storage.example_mysql_store import ExampleStore as ExampleMysqlStore
 import api.static_api as static_api
 import api.example_api as example_api
+from storage.coackroach_db import main
 
 if __name__ == "__main__":
     logger = Logger("MAIN", log_folder=get_log_folder())
@@ -37,6 +38,6 @@ if __name__ == "__main__":
     static_api.register_endpoints(app)
     # TODO: replace this with your (multiple) API registrations
     example_api.register_endpoints(app, stores)
-
+    main()
     # start flask app
     app.run(host='0.0.0.0', port=5555, debug=config["IS_DEBUG"])
